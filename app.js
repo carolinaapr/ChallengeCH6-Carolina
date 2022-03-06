@@ -2,20 +2,14 @@ const express = require("express")
 const app = express()
 const port = 3000
 
-app.use("/", function (req,res,next) {
-    console.log("Time: ", Date())
-    console.log("Request URL: ", req.originalUrl);
-    console.log("Request Type: ", req.method);
-    next();
-});
+//home route
+app.set('view engine','ejs')
 
+//homepage awal
+app.get('/', (req,res) =>{
+    res.render('base',{title: "Game Administrator Login System"})
+})
 
-app.use(express.json())
-app.use(
-    express.urlencoded({
-        extended: true
-    })
-)
+app.listen(port,()=> {console.log(`Aplikasi ini berjalan pada port ${port}`)})
 
-app.get('/',(req,res) => res.send('Hello anjig!'))
-app.listen(port, () =>  console.log(`App ini berjalan di port ${port}`))
+ 

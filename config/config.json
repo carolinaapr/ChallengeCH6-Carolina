@@ -2,21 +2,21 @@
   "development": {
     "username": "carolina",
     "password": "password",
-    "database": "chapter6",
+    "database": "challenge",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "carolina",
     "password": "password",
-    "database": "chapter6",
+    "database": "challenge",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
     "username": "carolina",
     "password": "postgres",
-    "database": "chapter6",
+    "database": "challenge",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
