@@ -12,16 +12,21 @@ Atur/ setup konfigurasi database administrator di config>config.json (menggunaka
     dialect: "postgres",
 
 Buat file entry point. project ini menggunakan app.js sebagai entry point dan input kode untuk dapat mengakses localhost.<br />
+
 pada package.json tambahkan script untuk memnjalankan npm start dan nodemon secara otomatis sehingga saat mengupdate akan berjalan otomatis
     { "start": "nodemon app.js"}
 
 membuat model yang akan disambungkan ke database
+  
     Membuat user_id
-    $npx sequelize-cli model:generate --name user --attributes user_id:integer, email:string, password:string
     Mebuat user_game_biodata
     Membuat user_game_history
-Migrasi tabel user id
-    $npx sequelize
-Masukkin data dummy user_id ke dalam database
-    $npx sequelize-cli seed:generate --name dummy-user
-Menampiilkan data userid pada dashborad (base.ejs)
+
+Migrasi 
+    tabel user id
+    tabel user_game_biodata
+        tabel user_game_history
+
+Masukkin data dummy user_id ke dalam database tes berhasil/tidak
+
+menghubungkan databse ke dalam tampilan web ejs
